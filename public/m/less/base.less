@@ -1,0 +1,76 @@
+@main-color: #006699;
+img {
+    vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+body {
+    // 最大宽度750px;
+    max-width: 750px;
+    margin: 0px auto;
+    font-size: .14rem;
+    line-height: .14rem;
+    padding: .45rem 0;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: .45rem;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background-color: @main-color;
+    .left {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+    .center {
+        flex: 1;
+        margin: 0;
+        line-height: 0.45rem;
+        color: #fff;
+        font-weight: normal;
+        font-size: .18rem;
+    }
+    .right {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    height: .45rem;
+    width: 100%;
+    background-color: @main-color;
+    color: #fff;
+    .mui-row {
+        text-align: center;
+        p {
+            color: #fff;
+        }
+    }
+}

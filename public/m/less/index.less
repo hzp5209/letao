@@ -1,0 +1,72 @@
+@import './base.less';
+// 头部样式
+
+
+#main {
+    //区域滚动的mui-scroll-wrapper有绝对定位  所以要给main一个相对定位
+    // 由于内容绝对定位了main没有了内容撑开高度导致没有高度,所以要给body设置高度,main设置高度
+    position: relative;
+    height: 100vh;
+    #nav {
+        padding: 10px;
+        .mui-row {
+            .mui-col-xs-4 {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #banner {
+        padding: 10px;
+        .mui-row {
+            .left {
+                a {
+                    display: block;
+                    width: 100%;
+                    img {
+                        width: 50%;
+                        height: 1.23rem;
+                    }
+                }
+            }
+            .right {
+                img {
+                    width: 100%;
+                    height: 2.46rem;
+                }
+            }
+        }
+    }
+    #brand {
+        padding: 10px;
+        .title {
+            img {
+                width: 100%;
+            }
+        }
+        .mui-row {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    #sport,
+    #woman,
+    #man {
+        padding: 10px;
+        .title {
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            .mui-row {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
